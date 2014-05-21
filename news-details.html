@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Arab Advisors</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0;" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script>
+        $(function () {
+
+            $('.left-menu-toggle').click(
+                function () {
+                    $('.left-menu').toggleClass('left-menu-active');
+                    $('body').toggleClass('locked');
+                    $('html').toggleClass('locked');
+
+
+                });
+
+
+        })
+    </script>
+</head>
+<body>
+    <div class="left-menu">
+        <div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Agenda</a></li>
+                <li><a href="#">Speakers</a></li>
+                <li><a href="#">Find Us</a></li>
+                <li><a href="#">Social Media</a></li>
+                <li><a href="#">Sponsors & Partners</a></li>
+                <li><a href="#">Information</a></li>
+                <li><a href="#">Survey</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="toolbar" id="toolbar">
+        <button type="button" class="left-menu-toggle">
+            <span class="icon-bar icon-bar-first"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <h1 class="title">Title</h1>
+        <button type="button" class="toolbar-home">
+            <img alt="Home" height="23" width="29"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKMAAACBCAYAAACsCAq9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODNDOTlGMzVCOTk2MTFFMzg0NDRCM0Q5N0Y5RTlBNjYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODNDOTlGMzZCOTk2MTFFMzg0NDRCM0Q5N0Y5RTlBNjYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4M0M5OUYzM0I5OTYxMUUzODQ0NEIzRDk3RjlFOUE2NiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4M0M5OUYzNEI5OTYxMUUzODQ0NEIzRDk3RjlFOUE2NiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PrtryMoAAAUrSURBVHja7J3NUdtAGEAlDwX4zAk6MBVgdwAd2BUErlyAC1dIBTgV4FRgUwHuIMqFsztI9rNXDAEytrXa1be7781ofIixifTYZ/1YWxYdcDV/fTQP45ZfdmmW0d3ocFVAlPQ6EPHGg4jCwCxPbFJk3IdvHl97aGQfsFmRcZdRcWge+p7fZshmRUYt9NmsyAiAjJAGB6wCp8+/g3cfC+SQ0vJudLhg7SBjCAFFvAt7RKD/n+eIlDOz3BoxK9YamfYh4pl5+GWW6y07SfJvY7O8mJ8Zs+aQsW0R74vNAfV99tTluY9ytsmOqICMThIemeXFprkpMjrOORiPjK5ZfrE7Ka4MrJBkGxmDZJlsI+MnVg4StpFlso2Mawknd6PDBwVZJtsZy1hfyzhVlOVds/1EttORcWpFXCrN8jbWIzLZjl9GyfKkydXdgbO8jSMr5AUyxkdllpPIsrwL9zlnO0YZZ1bEWLNMthOR8dJIeJ5Alsl2xDLWWW562EZrlsl2ZDKmnmWyHYmMuWSZbCuWUeQbZZjlrLOtUcaFWY6bXL6fSJazzbY2GeVS/RFZzjPbWmSss3xDlvPNtgYZXbI8yCDL2WS7axldsjw2D/NMspxFtrv6qmp97eGsgYSSJMnyGAe/zPapXbfR3Rqwi5FRDl6fNBRxYEdDREww22XIN5NRrelfrM3yfcGNnfbhsumx2uRlbCowWXZiFku2S+UiSmoe2UlxpjLLeZPz+zntTbO3zN623pGRLOeb7VKZiGQ542z3FIlIljPPdqlAQrJMtruXkSyTbRWZJstku/ORkSyTbRUykmWyrSLTZJlsdz4ykmWyrUJGsky2VWSaLJPtzkdGsky2VchIlsm2ikyTZbLd+chIlsl2W9kuHUUkyyCsbLYXnWSaLMM7pI4ylchN0JGRLMMWFnaUXHmVkSyDz2z39hCRLIPXbJc7SEiWIUi2S7IMWrLdI8ugJdslWQYt2S7JMmjJds9Dlh8KhwnIIQpufWS7bDHLbzcANa/5h+2VLmYbizfDop37qL9lu1e0c/PNxjcAhWiFFImOrUwuDO0o2T9oI8vmF7tk82Qp5HqWCpvba4eXEgevXa5nrD+EIiJSiowjx32FcVMZyTK0ne1+k9kOyDJ4yfY+IyNZBp/ZXu0qI1kG39n+LjJOd8iyiFiximHfbMsMaMX2g+Qy2D30zJMn9skfh9SKLEPL2a6++OgnZ+zWU/Z9PDc9rJ/k8p1YzsAkL1fp4MZRsfmqa/Hx3LSXe+0gIzI2oceqBS0gIyAjADICMgIgIyAjADJCtBywCv6hKj6fsvKBXNncZ3Uj41cszHLren/BfbDfxpRr/o5Y/WS6ZipXloQUUTDvNzUPJ8XmihVAxmJmr1rqhPrKaIRExvX3vLv+JayQXKaXuYwzDRN+WyEXgXackFEpzwp3opAxU7SNRL+REQAZAZARkBEAGQEZAZARkBEAGQEZAZARkBEAGQEZAZARkBEAGQGQEZARABkBGQGQEZARQJWM3DsG1Mi4YtUmyyI2GZ/ZZsmyjE1GpgJOl+eoZLSTYFZst+SofM457nNv+pZtlxw/YtyBqW8TzF51QqNisZkbOj4ZLRO2YTJMfN9c1auM9rMjQsZPkJkgvJ+Bsbl+YHtGi8wGcRPijYKcDjT/mUtGyGhHxGDbLdi56XfznlRs4yh2VkahRsTgMtafIc1ybEdJpNQpoRySOwk9SZPQyXRtdpScXs1fz8zjqVmGxWY+PQjP0i4/fR7Q3oW/AgwAriqWxyk5TGsAAAAASUVORK5CYII=" />
+        </button>
+    </div>
+
+
+    <div class="content news-content">
+        <div href="#" class="img-block news-details-header">
+        <img alt="News Image"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACzCAMAAAAE5NFlAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RTYzMThBNTlCRkM5MTFFM0JCNkE5NzYwN0YyMDg4RTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RTYzMThBNUFCRkM5MTFFM0JCNkE5NzYwN0YyMDg4RTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpFNjMxOEE1N0JGQzkxMUUzQkI2QTk3NjA3RjIwODhFNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpFNjMxOEE1OEJGQzkxMUUzQkI2QTk3NjA3RjIwODhFNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pu8dW+IAAAMAUExURfT09LGxsmTJ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" />
+            <span class="news-title">ESKADENIA Software Successfully Conducted the Annual Strategy Meeting 2014</span>
+            <span class="date">24-May-2014</span>
+        </div>
+        <div class="text-content">
+
+
+
+            <p>
+                Dr. VanRooyen has worked extensively in humanitarian assistance in over thirty countries affected by war and disaster, including Somalia, Bosnia, Rwanda, Iraq, North Korea, Darfur-Chad and the Democratic Republic of Congo, both as a physician and a policy advisor with numerous relief organizations, including CARE, Save the Children, Physicians for Human Rights and Samaritans Purse International Relief.<br>
+                &nbsp;
+            </p>
+            <p>He has served as a special advisor for the World Health Organization and as a member of the UN Inter-Agency Standing Committee's Health Cluster. Domestically, Dr. VanRooyen has provided relief assistance at the site of the World Trade Center in New York on September 11th with the American Red Cross and also helped to coordinate the American Red Cross public health response to Hurricane Katrina, sending over twenty physicians from the Harvard system to hurricane-devastated regions.</p>
+            <p>
+                <p>
+                    Dr. VanRooyen teaches courses on humanitarian operations in war at the Harvard School of Public Health. His textbook,Emergency Field Medicine, is considered one of the key reference texts in this area, and he has authored over 50 publications related to international emergency medicine development and humanitarian assistance. Dr. VanRooyen has served on numerous advisory panels and boards, including International Rescue Committee, the National Academies/GAO evaluation of mortality studies in Darfur, and is chairman of the Humanitarian Action Summit. Dr. VanRooyen has also been awarded the Reader's Digest Health Heroes Award, the Raoul Wallenburg Foundation Humanitarian Award, the Hippocrates Society Humanitarian Award and the AMA Pride in the Profession Award.
+                </p>
+                <p>
+                    He was given the University of Illinois Alumni Humanitarian Award and was featured as one of two US physicians in the American Medical Association's publication entitled Caring Physicians of the World.
+                </p>
+        </div>
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>
